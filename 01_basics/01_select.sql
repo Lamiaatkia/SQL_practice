@@ -28,3 +28,7 @@ where not country = 'germany';
 --insert into (put new data )
 insert into customers(customername, contact name, address, city , country)
 values('test customer', 'john smith', 'main street', 'tokyo', ' japan');
+--null (missing value/ no value)
+select* from customers
+where contactname is null;
+where contactname is not null;
