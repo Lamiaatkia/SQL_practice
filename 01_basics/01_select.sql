@@ -1,4 +1,8 @@
--- My first SQL practice
--- SELECT statement
+-- SQL Practice 01
+-- SELECT
 
 SELECT * FROM students;
+
+SELECT name FROM students;
+
+SELECT name, age FROM students;
