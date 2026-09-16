@@ -9,10 +9,18 @@ SELECT name, age FROM students;
 select* from customer
 where country = 'germany';
 
---order by(sorting data)
+--order by(sorting data) 
 select* from customer
 order by customername;
-
+order by customer name ASC;      ( asc = small to large)
+order by customer name desc; (large to small)
+  
 --disticnct(remove duplicate value from the result)
 select distinct country
 from customers;
+
+--and (two or more condition wants to be true)
+select * from customers
+where countr = ' germany'
+and city = 'berlin';
+
