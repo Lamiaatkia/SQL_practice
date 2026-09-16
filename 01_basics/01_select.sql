@@ -32,3 +32,7 @@ values('test customer', 'john smith', 'main street', 'tokyo', ' japan');
 select* from customers
 where contactname is null;
 where contactname is not null;
+--update(change information that is already existed)
+update customers
+set city ='tokyo',
+where customername = 'test customer';   [if no where than every customer dat awill be changed]
