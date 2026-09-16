@@ -22,3 +22,6 @@ and city = 'berlin';
 select * from customers
 where country = ' germany'
 or country ='france';
+--not (exclude this condition)
+select * from customer
+where not country = 'germany';
