@@ -25,3 +25,6 @@ or country ='france';
 --not (exclude this condition)
 select * from customer
 where not country = 'germany';
+--insert into (put new data )
+insert into customers(customername, contact name, address, city , country)
+values('test customer', 'john smith', 'main street', 'tokyo', ' japan');
