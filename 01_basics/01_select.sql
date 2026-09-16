@@ -13,3 +13,6 @@ where country = 'germany';
 select* from customer
 order by customername;
 
+--disticnct(remove duplicate value from the result)
+select distinct country
+from customers;
