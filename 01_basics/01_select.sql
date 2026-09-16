@@ -8,3 +8,8 @@ SELECT name, age FROM students;
 --where practice
 select* from customer
 where country = 'germany';
+
+--order by(sorting data)
+select* from customer
+order by customername;
+
