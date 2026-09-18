@@ -36,3 +36,6 @@ where contactname is not null;
 update customers
 set city ='tokyo',
 where customername = 'test customer';   [if no where than every customer dat awill be changed]
+--delete(remove data)  
+delete from customers
+where customername = 'test customer';
