@@ -39,3 +39,6 @@ where customername = 'test customer';   [if no where than every customer dat awi
 --delete(remove data)  
 delete from customers
 where customername = 'test customer';
+--select top(limit how many rows we want)
+select top 5* from customers:( here * means all column)
+select from 5 customername, country from customers; (here only two rows( 
