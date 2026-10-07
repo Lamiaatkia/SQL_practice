@@ -66,6 +66,13 @@ where customername like '%A%'; means the name contains A dosnt matter where it i
 where customername like 'A_'; MEANS the name start with A and after that only one chartacter, ex AB,AC, not ABC
 easy tricks % many characters and _means one character
 where customername like '_A%', means the second character is A
-
-
+--in is used hen to check multiple possible values
+select*
+from customers
+where cuntry in ('germany','france','japan');
+where country not in ('germany','france','japan');
+--between is used to find values iwthin a range
+select*from products
+where price between 10 and 20;
+where price not between 10 and 20; means value is not between the raange
 
