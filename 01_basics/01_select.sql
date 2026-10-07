@@ -23,7 +23,7 @@ select * from customers
 where country = ' germany'
 or country ='france';
 --not (exclude this condition)
-select * from customer
+select * from customer (when select * that means all coloumn and when count * means all rows)
 where not country = 'germany';
 --insert into (put new data )
 insert into customers(customername, contact name, address, city , country)
@@ -43,5 +43,10 @@ where customername = 'test customer';
 select top 5* from customers:( here * means all column)
 select from 5 customername, country from customers; (here only two rows)
 --count
-select count(*)from customers; (means all the column because star)
+select count(*)from customers; (means all the rows because star)
 select max(customerid)from customer;
+select min(customer id) as smallestcustomerid from customers;
+--if we want to find how many custmer is from germany?
+select count(*)as germancustomer
+  from customers
+where country= 'germany';
