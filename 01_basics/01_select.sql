@@ -50,3 +50,22 @@ select min(customer id) as smallestcustomerid from customers;
 select count(*)as germancustomer
   from customers
 where country= 'germany';
+--add the price for fruits
+select sum(price) as totalprice
+from products
+where category= 'fruits';
+select avg(price) as averageprice
+from products
+where category= ' baverages';
+--like is used when to search for a pattern in text, usually use % to mean. if we want ot find customwe namwe starting with A
+select*
+from customer
+where customername like 'A%'; means name start with A
+where customername like '%A'; means the name ends with A
+where customername like '%A%'; means the name contains A dosnt matter where it is
+where customername like 'A_'; MEANS the name start with A and after that only one chartacter, ex AB,AC, not ABC
+easy tricks % many characters and _means one character
+where customername like '_A%', means the second character is A
+
+
+
